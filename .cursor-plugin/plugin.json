@@ -1,0 +1,26 @@
+{
+  "name": "indices",
+  "displayName": "Indices",
+  "version": "0.1.0",
+  "description": "Turn any website into an API and tool-ify it for your agent, powered by Indices.",
+  "author": {
+    "name": "Indices",
+    "email": "support@indices.io"
+  },
+  "homepage": "https://indices.io",
+  "repository": "https://github.com/indicesio/indices-cursor-plugin",
+  "license": "MIT",
+  "keywords": [
+    "indices",
+    "mcp",
+    "connectors",
+    "web-automation",
+    "web-agent",
+    "browser-agent",
+    "browser-use",
+    "computer-use",
+    "scraping"
+  ],
+  "category": "developer-tools",
+  "logo": "assets/logo.png"
+}

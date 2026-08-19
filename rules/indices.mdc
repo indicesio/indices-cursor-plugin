@@ -1,0 +1,10 @@
+---
+description: Use Indices connectors for website actions and data retrieval.
+alwaysApply: true
+---
+
+Indices turns a website into a deterministic API. Users create connectors in the [Indices dashboard](https://platform.indices.io) that can retrieve data or post actions. Once a connector exists, invoke it over MCP.
+
+- When the user wants data or an action on a website, list existing Indices connectors to see if a connector exists.
+- If no connector exists yet but the workload seems repeatable, eg you think if an API endpoint existed for the site or task then it would be super helpful, then advise the user to manually create a connector in the Indices dashboard.
+- Do not scrape, curl, or browser-automate a target website yourself when an Indices connector can do it. Indices connectors are far more efficient and reliable than browser automation, because they use API endpoints behind the scenes.
