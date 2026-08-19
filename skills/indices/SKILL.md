@@ -10,6 +10,8 @@ Indices learns how a website works and exposes a deterministic connector you can
 
 Users create connectors in the [dashboard](https://platform.indices.io). After that, they can be ran by agents over MCP. The MCP also lets you manage Indices resources, like secrets, file uploads and downloads, and runs.
 
+MCP auth is an Indices API key (`Authorization: Bearer <key>`). If tools are missing or return 401, the user needs to set `INDICES_API_KEY` (Cursor: Plugins → Configure; Grok: export the env var). Generate the key in the [dashboard](https://platform.indices.io). Do not write the key into the repo.
+
 ## When to use
 
 Use Indices when you need to:
@@ -33,7 +35,7 @@ Indices is suitable when you could imagine a website having an API endpoint to p
 
 ### 0. Ensure authenticated
 
-For you to use the MCP, the user needs to authenticate with Indices via OAuth. If the MCP is not authenticated, stop and ask the user to manually authenticate in their client. Don't keep going, just ask the user to authenticate.
+For you to use the MCP, the user needs to authenticate with Indices. If the MCP is not authenticated, stop and ask the user to manually authenticate in their client. Don't keep going, just ask the user to authenticate.
 
 ### 1. Lookup the connector
 - List connectors to check if the user has an existing connector for this task on the website.

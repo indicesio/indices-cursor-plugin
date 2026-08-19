@@ -2,7 +2,10 @@
   "mcpServers": {
     "indices": {
       "type": "http",
-      "url": "https://mcp.indices.io"
+      "url": "https://mcp.indices.io",
+      "headers": {
+        "Authorization": "Bearer ${INDICES_API_KEY}"
+      }
     }
   }
 }

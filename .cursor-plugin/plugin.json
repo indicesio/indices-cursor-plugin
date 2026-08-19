@@ -22,5 +22,16 @@
     "scraping"
   ],
   "category": "developer-tools",
-  "logo": "assets/logo.png"
+  "logo": "assets/logo.png",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "INDICES_API_KEY": {
+        "type": "string",
+        "title": "Indices API key",
+        "description": "API key from the Indices dashboard (https://platform.indices.io). Sent as Authorization: Bearer <key> to https://mcp.indices.io."
+      }
+    },
+    "required": ["INDICES_API_KEY"]
+  }
 }
